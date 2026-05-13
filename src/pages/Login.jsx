@@ -12,8 +12,11 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Hardcoded credentials
-    if (username === 'admin' && password === 'hima-ti-gacor') {
+    // Use environment variables for credentials
+    const adminUser = import.meta.env.VITE_ADMIN_USERNAME;
+    const adminPass = import.meta.env.VITE_ADMIN_PASSWORD;
+
+    if (username === adminUser && password === adminPass) {
       sessionStorage.setItem('isAdminAuthenticated', 'true');
       navigate('/admin');
     } else {
