@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.png';
 
 const Home = () => {
   return (
@@ -71,7 +72,7 @@ const Home = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-amber-500/20 blur-[80px] rounded-full"></div>
               <img
-                src="/src/assets/logo.png"
+                src={logo}
                 alt="HIMA-TI Logo"
                 className="w-72 h-72 md:w-96 md:h-96 object-contain relative z-10 drop-shadow-[0_0_30px_rgba(245,158,11,0.2)]"
               />

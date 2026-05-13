@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="md:col-span-5 flex flex-col items-center md:items-start text-center md:text-left">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <img src="/src/assets/logo.png" alt="Logo" className="w-10 h-10" />
+              <img src={logo} alt="Logo" className="w-10 h-10" />
               <span className="font-bold text-amber-500 tracking-wider text-lg">HIMA-TI</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
