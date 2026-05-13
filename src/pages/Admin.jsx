@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Users, Save, LogOut, Plus, Trash2, ChevronRight, UserPlus, Info } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const Admin = () => {
   const [activeTab, setActiveTab] = useState('dph'); 
@@ -265,7 +266,7 @@ const Admin = () => {
       {/* Sidebar */}
       <aside className="w-64 bg-[#0f0f13] border-r border-white/5 flex flex-col pt-8 fixed h-full">
         <div className="px-8 mb-10 flex items-center gap-3">
-          <img src="/src/assets/logo.png" alt="Logo" className="w-8 h-8" />
+          <img src={logo} alt="Logo" className="w-8 h-8" />
           <span className="font-bold text-amber-500 tracking-wider">ADMIN PANEL</span>
         </div>
 

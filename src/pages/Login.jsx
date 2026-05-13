@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Lock, User, LogIn, AlertCircle } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -35,7 +36,7 @@ const Login = () => {
         className="w-full max-w-md relative z-10"
       >
         <div className="text-center mb-10">
-          <img src="/src/assets/logo.png" alt="Logo" className="w-16 h-16 mx-auto mb-6" />
+          <img src={logo} alt="Logo" className="w-16 h-16 mx-auto mb-6" />
           <h2 className="text-3xl font-black text-white uppercase tracking-tighter">Admin Access</h2>
           <p className="text-slate-500 text-sm mt-2">Masuk untuk mengelola data HIMA-TI</p>
         </div>
